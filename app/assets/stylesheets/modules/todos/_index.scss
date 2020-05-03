@@ -7,6 +7,9 @@
     height: 100vh;
     background-color: plum;  
   }
+
+  //ここからメイン
+
   .main{
     height: 15vh;
     width: calc(100vw - 25vw);
@@ -40,6 +43,9 @@
           background-color: steelblue;
         }
       }
+
+  //ここからタスクコンテンツ
+
       &__form {
         height: 5vh;
         background-color: silver;
