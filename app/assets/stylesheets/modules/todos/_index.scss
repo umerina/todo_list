@@ -30,7 +30,7 @@
         height: 5vh;
         background-color: yellow;
         display: flex;
-        
+
         &__content {
           width: 25vw;
           background-color: seagreen;
@@ -39,7 +39,6 @@
           width: 25vw;
           background-color: steelblue;
         }
-
       }
       &__form {
         height: 5vh;
@@ -55,9 +54,7 @@
           background-color: thistle;
         }
         
-        }
-      
-  
+      }
     }
   }
 }
