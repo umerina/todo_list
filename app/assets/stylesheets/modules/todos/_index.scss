@@ -13,34 +13,45 @@
   .main{
     height: 15vh;
     width: calc(100vw - 25vw);
-    background-color: salmon;
+    //background-color: salmon;
     
     &__item {
     height: 10vh;
-    background-color: pink;
+    //background-color: pink;
+    margin: 20px 0px;
+    font-size: 60px;
+    font-family: Courier;
     }
     
     &__name{
       height: 5vh;
-      background-color: red;
+      //background-color: red;
+      margin: 0px 10px;
+      font-family: Courier New;
     }
 
     &__taskList {
     height: 15vh;
-    background-color: blue;
+    background-color: steelblue;
 
       &__top {
         height: 5vh;
-        background-color: yellow;
+        //background-color: yellow;
         display: flex;
 
         &__content {
           width: 25vw;
-          background-color: seagreen;
+          //background-color: seagreen;
+          margin: 20px 0px 0px;
+          color: whitesmoke;
+          font-size: 12px;
         }
         &__period {
           width: 25vw;
-          background-color: steelblue;
+          //background-color: steelblue;
+          margin: 20px 0px 0px;
+          color: whitesmoke;
+          font-size: 12px;
         }
       }
 
@@ -48,16 +59,16 @@
 
       &__form {
         height: 5vh;
-        background-color: silver;
+        //background-color: silver;
         display: flex;
         
         &__task {
           width: 25vw;
-          background-color: slateblue;  
+          //background-color: slateblue;  
         }
         &__day {
           width: 25vw;
-          background-color: thistle;
+          //background-color: thistle;
         }
         
       }
