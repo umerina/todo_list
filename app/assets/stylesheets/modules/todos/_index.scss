@@ -29,13 +29,30 @@
       &__top {
         height: 5vh;
         background-color: yellow;
+        display: flex;
+        
+        &__content {
+          width: 25vw;
+          background-color: seagreen;
+        }
+        &__period {
+          width: 25vw;
+          background-color: steelblue;
+        }
+
       }
       &__form {
         height: 5vh;
         background-color: silver;
+        display: flex;
         
-        &__content {
-          width: ;
+        &__task {
+          width: 25vw;
+          background-color: slateblue;  
+        }
+        &__day {
+          width: 25vw;
+          background-color: thistle;
         }
         
         }
