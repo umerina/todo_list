@@ -2,7 +2,7 @@ class TodosController < ApplicationController
   
   def index
     @todo = Todo.new
-    todos = Todo.order('created_at ASC')
+    @todos = Todo.order('created_at ASC')
   end
 
   def create
