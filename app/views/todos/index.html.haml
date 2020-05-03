@@ -1,18 +1,21 @@
-.wrapper
-  .sideBar
-    .sideBar__table
-    .sideBar__sort
-  .main
-    .main__item
-      toDo-list
-    .main__name
-    .main__taskList
-      .main__taskList__top
-        .main__taskList__top__content
-          内容
-        .main__taskList__top__period
-          期限
-      .main__taskList__form
-        .main__taskList__form__task
-        .main__taskList__form__day
-        .main__taskList__form__sumbit
+= form_for @todo, html: { class: 'form js-form' } do |f|
+  .wrapper
+    .sideBar
+      .sideBar__table
+      .sideBar__sort
+    .main
+      .main__item
+        toDo-list
+      .main__name
+      .main__taskList
+        .main__taskList__top
+          .main__taskList__top__content
+            内容
+          .main__taskList__top__period
+            期限
+        .main__taskList__form
+          .main__taskList__form__task
+            = f.text_field :task, class: 'main_taskList_input js-form__text-field', placeholder: 'タスクを入力してください'
+          .main__taskList__form__day
+          .main__taskList__form__sumbit
+            = f.submit "追加", class: 'main_taskList_submit js-submit'
