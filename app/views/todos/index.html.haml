@@ -14,5 +14,8 @@
           期限
       .main__taskList__form
         .main__taskList__form__task
+          = form_for[@task, @limit_date] do |f| 
+            = f.text_field :task, class: 'main_taskList_input', placeholder: 'タスクを入力してください'
         .main__taskList__form__day
         .main__taskList__form__sumbit
+          = f.submit "送信",class: 'main_taskList__submit'
