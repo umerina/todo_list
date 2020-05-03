@@ -1,21 +1,35 @@
 = form_for @todo, html: { class: 'form js-form' } do |f|
   .wrapper
     .sideBar
-      .sideBar__table
+      %table.sideBar__table
+        %tr.sideBar__table__total
+          %th 現在のタスク総数
+          %td 1
+          %td
+        %tr.sideBar__table__remain
+          %th 残タスク
+          %td 2
+          %td
+        %tr.sideBar__table__compleate
+          %th 完了済みタスク数
+          %td 3
+          %td
       .sideBar__sort
     .main
       .main__item
-        toDo-list
+        TODO-LIST
       .main__name
+        manage your tasks here
       .main__taskList
         .main__taskList__top
           .main__taskList__top__content
-            内容
+            task
           .main__taskList__top__period
-            期限
+            limit_date
         .main__taskList__form
           .main__taskList__form__task
-            = f.text_field :task, class: 'main_taskList_input js-form__text-field', placeholder: 'タスクを入力してください'
+            = f.text_field :task, class: 'main_taskList_input js-form__text-field', placeholder: 'タスクを入力'
           .main__taskList__form__day
+            = f.text_field :limit_date, class: 'main_taskList_input js-form__text-field' ,placeholder: '期限を入力'
           .main__taskList__form__sumbit
             = f.submit "追加", class: 'main_taskList_submit js-submit'
