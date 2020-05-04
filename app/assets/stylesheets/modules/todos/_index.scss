@@ -70,9 +70,9 @@
         font-size: 13px;
 
         &__content {
-          width: 25vw;
+          width: 30vw;
           //background-color: seagreen;
-          margin: 20px 0px 0px 2px;
+          margin: 20px 0px 0px 5px;
           color: whitesmoke;
         }
         &__period {
@@ -91,20 +91,58 @@
         display: flex;
         
         &__task {
-          width: 25vw;
-          margin: 0px 0px 0px 2px;
+          width: 30vw;
+          margin: 0px 0px 0px 5px;
           //background-color: slateblue;  
         }
         &__day {
           width: 25vw;
           //background-color: thistle;
         }
-        
       }
     }
+
+    //ここから表示
+
+    &__indicate {
+      height: 15vh;
+      border:solid 2px lightcoral;
+      margin-top: 5px;
+      font-family: Courier New;
+
+      &__matter {
+        height: 10vh;
+        //background-color: khaki;
+        &__content1 {
+          width: 30vw;
+          //background-color: seagreen;
+          margin: 3px 0px 0px 5px;
+          font-size: 13px;
+        }
+        &__list {
+          height: 90%;
+          margin: 5px;
+          //background-color: fuchsia;
+
+        }
+      }
+      &__timeLimit {
+        height: 5vh;
+        //background-color: forestgreen;
+        display: flex;
+        &__period1 {
+          width: 10%;
+          //background-color: lightgoldenrodyellow;
+          margin: 0px 0px 3px 5px;
+          font-size: 13px;
+        }
+        &__limit {
+          //font-size: 13px;
+        }
+      }
+    } 
   }
 }
-
 .main_taskList_input {
   font-size: 20px;
 }

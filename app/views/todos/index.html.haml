@@ -30,6 +30,15 @@
           .main__taskList__form__task
             = f.text_field :task, class: 'main_taskList_input js-form__text-field', placeholder: 'タスクを入力'
           .main__taskList__form__day
-            = f.text_field :limit_date, class: 'main_taskList_input js-form__text-field' ,placeholder: '期限を入力'
+            = f.date_select :limit_date, class: 'main_taskList_input js-form__text-field' ,placeholder: '期限を入力'
           .main__taskList__form__sumbit
             = f.submit "追加", class: 'main_taskList_submit js-submit'
+      .main__indicate
+        .main__indicate__matter
+          .main__indicate__matter__content1
+            task
+          .main__indicate__matter__list
+        .main__indicate__timeLimit
+          .main__indicate__timeLimit__period1
+            limit-date
+          .main__indicate__timeLimit__limit

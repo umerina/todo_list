@@ -5,6 +5,7 @@ class TodosController < ApplicationController
     @todos = Todo.order('created_at ASC')
   end
 
+
   def create
     Todo.create(todo_params)
     respond_to do |format|
@@ -18,3 +19,4 @@ class TodosController < ApplicationController
     params.require(:todo).permit(:task, :limit_date)
   end
 end
+
