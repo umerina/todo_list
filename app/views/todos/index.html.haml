@@ -28,11 +28,11 @@
             limit_date
         .main__taskList__form
           .main__taskList__form__task
-            = f.text_field :task, class: 'main_taskList_input js-form__text-field', placeholder: 'タスクを入力'
+            = f.text_field :task, class: 'main_taskList_input js-form__text-field', placeholder: 'enter a task'
           .main__taskList__form__day
             = f.date_select :limit_date, class: 'main_taskList_input js-form__text-field' ,placeholder: '期限を入力'
           .main__taskList__form__sumbit
-            = f.submit "追加", class: 'main_taskList_submit js-submit'
+            = f.submit "task", class: 'main_taskList_submit js-submit'
       .main__indicate
         - @todos.each do |todo|
           .main__indicate__matter
