@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 .wrapper {
   display: flex;
   height: 100vh;
@@ -128,16 +131,21 @@
       }
       &__timeLimit {
         height: 5vh;
-        //background-color: forestgreen;
+        background-color: forestgreen;
         display: flex;
         &__period1 {
           width: 10%;
-          //background-color: lightgoldenrodyellow;
+          background-color: lightgoldenrodyellow;
           margin: 0px 0px 3px 5px;
           font-size: 13px;
         }
         &__limit {
           //font-size: 13px;
+        }
+        &__destroy {
+          width: 10%;
+          background-color: palevioletred;
+          margin: 0 0 0 auto;
         }
       }
     } 

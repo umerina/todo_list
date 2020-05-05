@@ -15,6 +15,11 @@ class TodosController < ApplicationController
     end
   end
 
+  def destroy
+    todo = Post.find(params[:id])
+    post.destroy
+  end
+
 
 
   private
