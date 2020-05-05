@@ -15,6 +15,8 @@ class TodosController < ApplicationController
     end
   end
 
+
+
   private
   def todo_params
     params.require(:todo).permit(:task, :limit_date)
