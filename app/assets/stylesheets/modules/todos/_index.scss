@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 .wrapper {
   display: flex;
   height: 100vh;
@@ -46,13 +49,13 @@
     &__item {
     height: 10vh;
     //background-color: pink;
-    margin: 20px 0px;
+    margin: 20px 0px 0px 0px;
     font-size: 60px;
     font-family: Courier;
     }
     
     &__name{
-      height: 5vh;
+      height: 2.75vh;
       //background-color: red;
       margin: 0px 10px;
       font-family: Courier New;
@@ -83,7 +86,7 @@
         }
       }
 
-  //ここからタスクコンテンツ
+    //ここから入力コンテンツ
 
       &__form {
         height: 5vh;
@@ -137,7 +140,16 @@
           font-size: 13px;
         }
         &__limit {
-          //font-size: 13px;
+          font-size: 13px;
+        }
+        &__destroy {
+          width: 10%;
+          //background-color: palevioletred;
+          margin: 0 0 0 auto;
+        }
+        .delete {
+          color: #FFDAB9;
+          font-size: 1.5em;
         }
       }
     } 
@@ -146,3 +158,4 @@
 .main_taskList_input {
   font-size: 20px;
 }
+
