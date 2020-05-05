@@ -16,8 +16,8 @@ class TodosController < ApplicationController
   end
 
   def destroy
-    todo = Post.find(params[:id])
-    post.destroy
+    todo = Todo.find(params[:id])
+    todo.destroy
   end
 
 

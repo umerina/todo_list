@@ -86,7 +86,7 @@
         }
       }
 
-  //ここからタスクコンテンツ
+    //ここから入力コンテンツ
 
       &__form {
         height: 5vh;
@@ -131,21 +131,25 @@
       }
       &__timeLimit {
         height: 5vh;
-        background-color: forestgreen;
+        //background-color: forestgreen;
         display: flex;
         &__period1 {
           width: 10%;
-          background-color: lightgoldenrodyellow;
+          //background-color: lightgoldenrodyellow;
           margin: 0px 0px 3px 5px;
           font-size: 13px;
         }
         &__limit {
-          //font-size: 13px;
+          font-size: 13px;
         }
         &__destroy {
           width: 10%;
-          background-color: palevioletred;
+          //background-color: palevioletred;
           margin: 0 0 0 auto;
+        }
+        .destroy {
+          color: #FFDAB9;
+          font-size: 1.8em;
         }
       }
     } 
@@ -154,3 +158,4 @@
 .main_taskList_input {
   font-size: 20px;
 }
+
