@@ -34,11 +34,14 @@
           .main__taskList__form__sumbit
             = f.submit "追加", class: 'main_taskList_submit js-submit'
       .main__indicate
-        .main__indicate__matter
-          .main__indicate__matter__content1
-            task
-          .main__indicate__matter__list
-        .main__indicate__timeLimit
-          .main__indicate__timeLimit__period1
-            limit-date
-          .main__indicate__timeLimit__limit
+        - @todos.each do |todo|
+          .main__indicate__matter
+            .main__indicate__matter__content1
+              task
+            .main__indicate__matter__list
+              = todo.task
+          .main__indicate__timeLimit
+            .main__indicate__timeLimit__period1
+              limit-date
+            .main__indicate__timeLimit__limit
+              = todo.limit_date
