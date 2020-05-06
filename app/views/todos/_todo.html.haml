@@ -1,0 +1,13 @@
+.main__indicate__matter
+  .main__indicate__matter__content1
+    task
+  .main__indicate__matter__list
+    = todo.task
+.main__indicate__timeLimit
+  .main__indicate__timeLimit__period1
+    limit-date
+  .main__indicate__timeLimit__limit
+    = todo.limit_date
+  .main__indicate__timeLimit__destroy
+    = link_to todo_path(todo.id),method: :delete, class: "delete" do
+      = icon('fas fa-check-circle',  class: "icon")
