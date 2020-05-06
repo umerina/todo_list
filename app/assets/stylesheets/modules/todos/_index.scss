@@ -109,18 +109,25 @@
 
     &__indicate {
       height: 15vh;
-      border:solid 2px lightcoral;
-      margin-top: 5px;
+      //border:solid 2px lightcoral;
+      //margin-top: 5px;
       font-family: Courier New;
+
+      &__flame {
+        border:solid 1.5px lightblue;
+        margin-top: 5px;
+      }
 
       &__matter {
         height: 10vh;
         //background-color: khaki;
+
         &__content1 {
           width: 30vw;
           //background-color: seagreen;
           margin: 3px 0px 0px 5px;
           font-size: 13px;
+          color: lightslategray;
         }
         &__list {
           height: 90%;
@@ -138,6 +145,7 @@
           //background-color: lightgoldenrodyellow;
           margin: 0px 0px 3px 5px;
           font-size: 13px;
+          color: lightslategray;
         }
         &__limit {
           font-size: 13px;
@@ -148,7 +156,7 @@
           margin: 0 0 0 auto;
         }
         .delete {
-          color: #FFDAB9;
+          color: lightcoral;
           font-size: 1.5em;
         }
       }
