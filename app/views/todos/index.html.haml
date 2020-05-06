@@ -32,7 +32,7 @@
           .main__taskList__form__day
             = f.date_select :limit_date, class: 'main_taskList_input js-form__text-field' ,placeholder: '期限を入力'
           .main__taskList__form__sumbit
-            = f.submit "task", class: 'main_taskList_submit js-submit'
+            = f.submit "push", class: 'main_taskList_submit js-submit'
       .main__indicate
         - @todos.each do |todo|
           = render partial: "todo", locals: {todo: todo } 
