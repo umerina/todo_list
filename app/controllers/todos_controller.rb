@@ -18,6 +18,10 @@ class TodosController < ApplicationController
   def destroy
     todo = Todo.find(params[:id])
     todo.destroy
+    respond_to do |format|
+      format.html { redirect_to :root }
+      format.json {render json: @todo}
+    end
   end
 
 
