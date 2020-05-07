@@ -151,14 +151,20 @@
           font-size: 13px;
         }
         &__destroy {
-          width: 10%;
+          width: 5%;
           //background-color: palevioletred;
           margin: 0 0 0 auto;
         }
-        .delete {
+        .deleteIcon {
           color: lightcoral;
           font-size: 1.5em;
         }
+        .editIcon {
+          color: coral;
+          font-size: 1.5em;
+          //display: none;
+        }
+        
       }
     } 
   }
