@@ -15,9 +15,6 @@ class TodosController < ApplicationController
     end
   end
 
-  def show
-    @todo = Todo.find(params[:id])
-  end
 
 
   def destroy
@@ -36,7 +33,10 @@ class TodosController < ApplicationController
   def update
     todo = Todo.find(params[:id])
     todo.update(todo_params)
-    redirect_to todo_path(todo.id)
+    respond_to do |format|
+      format.html { redirect_to :root }
+      format.json {render json: @todo}
+    end
   end
 
 
