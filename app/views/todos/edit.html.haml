@@ -1,11 +1,15 @@
-.edit
-  .edit__topBar
-    .edit__topBar__left
-      task
-    .edit__topBar__right
-      limit-date
-  .edit__form
-    .edit__formBar__task
-    .edit__formBar__day
-    .edit__formBar__submit
-  
+= form_for @todo, html: { class: 'form js-form' } do |f|
+  .wrapper
+    .edit
+      .edit__topBar
+        .edit__topBar__left
+          task
+        .edit__topBar__right
+          limit-date
+      .edit__formBar
+        .edit__formBar__editTask
+          = f.text_field :task, class: 'main_taskList_input js-form__text-field', placeholder: 'enter a task'
+        .edit__formBar__editDay
+          = f.date_select :limit_date, class: 'main_taskList_input js-form__text-field' ,placeholder: '期限を入力'
+        .edit__formBar__editSubmit
+          = f.submit "task", class: 'main_taskList_submit js-submit'

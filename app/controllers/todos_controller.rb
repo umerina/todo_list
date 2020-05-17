@@ -15,6 +15,10 @@ class TodosController < ApplicationController
     end
   end
 
+  def show
+    @todo = Todo.find(params[:id])
+  end
+
 
   def destroy
     todo = Todo.find(params[:id])
@@ -32,6 +36,7 @@ class TodosController < ApplicationController
   def update
     todo = Todo.find(params[:id])
     todo.update(todo_params)
+    redirect_to todo_path(todo.id)
   end
 
 
