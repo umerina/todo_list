@@ -1,0 +1,51 @@
+.edit {
+  height: 15vh;
+  width: calc(100vw - 25vw);
+  margin: 0 auto;
+  margin-top: 30px;
+  background-color: steelblue;
+  font-family: Courier New;
+
+  &__topBar {
+    height: 5vh;
+    width: 100%;
+    //background-color: red;
+    display: flex;
+    font-size: 13px;
+    color: whitesmoke;
+
+    &__left {
+      width: 30vw;
+      //background-color: yellow;
+      margin: 20px 0px 0px 5px;
+    }
+
+    &__right {
+      width: 25vw;
+      //background-color: green;
+      margin: 20px 0px 0px 5px;
+    }
+  }
+
+  &__formBar {
+    height: 5vh;
+    width: 100%;
+    //background-color: lavenderblush;
+    display: flex;
+
+    &__editTask {
+      width: 30vw;
+      margin: 0px 0px 0px 5px;
+      //background-color: slateblue;  
+    }
+
+    &__editDay {
+      width: 25vw;
+      //background-color: lemonchiffon;
+    }
+
+
+  }
+
+
+}

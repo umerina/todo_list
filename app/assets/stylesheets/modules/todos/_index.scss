@@ -12,12 +12,14 @@
     width: 25vw;
     height: 100vh;
     //background-color: plum; 
+
     &__table {
       width: 100%;
       height: 30%;
       //background-color: gold;
       margin: 120px 0 0 0;
       font-family: Osaka;
+      
     
       &__total {
         height: 33%;
@@ -71,18 +73,19 @@
         //background-color: yellow;
         display: flex;
         font-size: 13px;
+        color: whitesmoke;
 
         &__content {
           width: 30vw;
           //background-color: seagreen;
           margin: 20px 0px 0px 5px;
-          color: whitesmoke;
+          
         }
         &__period {
           width: 25vw;
           //background-color: steelblue;
           margin: 20px 0px 0px;
-          color: whitesmoke;
+          
         }
       }
 
@@ -151,19 +154,34 @@
           font-size: 13px;
         }
         &__destroy {
-          width: 10%;
+          width: 5%;
           //background-color: palevioletred;
           margin: 0 0 0 auto;
         }
-        .delete {
+        .deleteIcon {
           color: lightcoral;
           font-size: 1.5em;
         }
+        .editIcon {
+          color: coral;
+          font-size: 1.5em;
+          //display: none;
+        }
+        
       }
     } 
   }
 }
+
+//入力ホーム
+
 .main_taskList_input {
   font-size: 20px;
+  border: none;
+  width: 80%;
+  border-radius: 3px;
 }
 
+.main_taskList_submit {
+  box-shadow: 0 0 2px rgba(255, 255, 255, 0.9);
+}

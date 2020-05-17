@@ -10,5 +10,9 @@
   .main__indicate__timeLimit__limit
     = todo.limit_date
   .main__indicate__timeLimit__destroy
-    = link_to todo_path(todo.id),method: :delete, class: "delete" do
+    = link_to todo_path(todo.id),method: :delete, class: "deleteIcon" do
       = icon('fas fa-check-circle',  class: "icon")
+  .main__indicate__timeLimit__edit
+    = link_to edit_todo_path(todo.id), method: :get, class: "editIcon" do
+      = icon('far fa-edit',  class: "icon")
+
