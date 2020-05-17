@@ -1,20 +1,5 @@
 = form_for @todo, html: { class: 'form js-form' } do |f|
   .wrapper
-    .sideBar
-      %table.sideBar__table
-        %tr.sideBar__table__total
-          %th 現在のタスク総数
-          %td 1
-          %td
-        %tr.sideBar__table__remain
-          %th 残タスク
-          %td 2
-          %td
-        %tr.sideBar__table__compleate
-          %th 完了済みタスク数
-          %td 3
-          %td
-      .sideBar__sort
     .main
       .main__item
         TODO-LIST
@@ -37,7 +22,21 @@
         - @todos.each do |todo|
           = render partial: "todo", locals: {todo: todo } 
              
-               
+    .sideBar
+      %table.sideBar__table
+        %tr.sideBar__table__total
+          %th 現在のタスク総数
+          %td 1
+          %td
+        %tr.sideBar__table__remain
+          %th 残タスク
+          %td 2
+          %td
+        %tr.sideBar__table__compleate
+          %th 完了済みタスク数
+          %td 3
+          %td
+      .sideBar__sort
 
              
 
