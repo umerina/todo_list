@@ -5,4 +5,34 @@
   margin-top: 10px;
   background-color: steelblue;
   font-family: Courier New;
+
+  &__topBar {
+    height: 5vh;
+    width: 100%;
+    //background-color: red;
+    display: flex;
+    font-size: 13px;
+    color: whitesmoke;
+
+    &__left {
+      width: 30vw;
+      //background-color: yellow;
+      margin: 20px 0px 0px 5px;
+    }
+
+    &__right {
+      width: 25vw;
+      //background-color: green;
+      margin: 20px 0px 0px 5px;
+    }
+
+  }
+
+
+
+
+
+
+
+
 }

@@ -73,18 +73,19 @@
         //background-color: yellow;
         display: flex;
         font-size: 13px;
+        color: whitesmoke;
 
         &__content {
           width: 30vw;
           //background-color: seagreen;
           margin: 20px 0px 0px 5px;
-          color: whitesmoke;
+          
         }
         &__period {
           width: 25vw;
           //background-color: steelblue;
           margin: 20px 0px 0px;
-          color: whitesmoke;
+          
         }
       }
 
