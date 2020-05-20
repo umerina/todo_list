@@ -1,0 +1,22 @@
+.exhibition{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 80%;
+
+  &__exhibitionBtn {
+  display: block;
+  background:lightblue;
+  color: #fff;
+  width: 100px;
+  padding: 25px 0;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10px;
+  }
+  &:hover {
+  background: steelblue;
+  text-decoration: none;
+  }
+
+}
